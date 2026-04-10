@@ -18,7 +18,7 @@ const translations = {
     contact: "Contact",
     
     // Home page
-    "hero.title": "Dr. Tran Thi Thanh Hoa",
+    "hero.title": "Tran Thi Thanh Hoa",
     "hero.subtitle": "Research and Development Engineer – HMI and VR",
     "hero.description": "PhD in Human Factors and Human-Machine Interaction with strong experience in operator activity analysis, usability evaluation, and interface design for complex systems. Specialized in AR/VR prototyping, autonomous vehicle interfaces, and user experience research.",
     "hero.viewResearch": "View Research",
@@ -140,7 +140,7 @@ const translations = {
     contact: "Contact",
     
     // Home page
-    "hero.title": "Dr. Tran Thi Thanh Hoa",
+    "hero.title": "Tran Thi Thanh Hoa",
     "hero.subtitle": "Ingénieure R&D – IHM et RV",
     "hero.description": "Docteure en Facteurs Humains et Interaction Humain-Machine avec une solide expérience en analyse d'activité, évaluation d'utilisabilité et conception d'interface pour systèmes complexes. Spécialisée en prototypage AR/VR, interfaces de véhicules autonomes et recherche en expérience utilisateur.",
     "hero.viewResearch": "Voir la Recherche",

@@ -24,7 +24,7 @@ export function Contact() {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    });
+    }); 
   };
 
   return (
