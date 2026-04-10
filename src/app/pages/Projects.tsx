@@ -1,0 +1,360 @@
+import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { ExternalLink, Github, Calendar, Users } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
+
+interface Project {
+  title: string;
+  description: string;
+  status: "active" | "completed" | "upcoming";
+  image: string;
+  duration: string;
+  team: string;
+  funding?: string;
+  tags: string[];
+  links?: {
+    website?: string;
+    github?: string;
+    paper?: string;
+  };
+}
+
+export function Projects() {
+  const { t } = useLanguage();
+
+  const projects: Project[] = [
+    {
+      title: "AR/VR Interfaces for Autonomous Vehicles",
+      description:
+        "Conducted 7 comprehensive user studies on trust, passenger experience, and usability in autonomous vehicles. Developed and tested novel AR interface visualizations using VR simulation environments. Performed workload and cognitive analysis using NASA-TLX, eye-tracking, and physiological data (GSR).",
+      status: "completed",
+      image:
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGludGVyZmFjZXxlbnwxfHx8fDE3NzU2NjAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      duration: "09/2022 - 10/2025",
+      team: "IRL Crossing CNRS, IMT Atlantique & Adelaide University",
+      funding: "PhD Research Project",
+      tags: ["AR/VR", "Autonomous Vehicles", "User Studies", "HMI"],
+      links: {
+        paper: "https://orcid.org",
+      },
+    },
+    {
+      title: "VR Autonomous Vehicle Simulator",
+      description:
+        "Designed and developed a comprehensive VR simulator for prototyping and testing novel AR interface visualizations in autonomous vehicle contexts. Built using Unity and C# with integration of Meta Quest Pro and advanced VR hardware for immersive user testing.",
+      status: "completed",
+      image:
+        "https://images.unsplash.com/photo-1758273239313-6c703d089dd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aXJ0dWFsJTIwcmVhbGl0eSUyMGhlYWRzZXQlMjB1c2VyfGVufDF8fHx8MTc3NTY2MDE0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      duration: "2022 - 2025",
+      team: "PhD Research Project",
+      tags: ["VR", "Unity", "C#", "Simulation", "Prototyping"],
+      links: {
+        github: "https://github.com",
+      },
+    },
+    {
+      title: "Immersive VR Modeling System",
+      description:
+        "Developed an innovative VR modeling system supporting direct 3D modeling operations including resize, translate, rotate, and Boolean operations. Managed complete development cycle from concept to prototype, user study, and publication. Presented outcomes at CAD 2021 conference.",
+      status: "completed",
+      image:
+        "https://images.unsplash.com/photo-1603982490701-fa98e79b23ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxodW1hbiUyMGNvbXB1dGVyJTIwaW50ZXJhY3Rpb24lMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzc1NjYwMTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      duration: "02/2021 - 07/2021",
+      team: "CNRS Grenoble",
+      tags: ["VR", "3D Modeling", "Unity", "HTC Vive"],
+      links: {
+        paper: "https://doi.org",
+      },
+    },
+    {
+      title: "AVATAR Project - Digital Twin VR Simulation (Erasmus+)",
+      description:
+        "Led a team of 5 students from 4 European universities on a digital twin VR simulation project. Managed project timeline, tasks, code reviews, and cross-cultural collaboration. Contributing to an open-source 3D modeling program in VR with focus on team coordination and technical excellence.",
+      status: "completed",
+      image:
+        "https://images.unsplash.com/photo-1545579833-0e15a2cdb26b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdWdtZW50ZWQlMjByZWFsaXR5JTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NzU2NjAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      duration: "02/2021 - 06/2021",
+      team: "5 students from 4 European universities",
+      funding: "Erasmus+ Program",
+      tags: ["VR", "Digital Twin", "Team Leadership", "Open Source"],
+      links: {
+        github: "https://github.com",
+      },
+    },
+    {
+      title: "Automated Testing Platform for VR (TechViz)",
+      description:
+        "Collaborated with engineering teams to design and improve an automated testing platform for virtual reality applications. Collected and analyzed user feedback to enhance usability and workflow efficiency using C++, C#, and JavaScript technologies.",
+      status: "completed",
+      image:
+        "https://images.unsplash.com/photo-1634947096506-6d9f114cf64e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY2Nlc3NpYmlsaXR5JTIwdGVjaG5vbG9neSUyMGRldmljZXN8ZW58MXx8fHwxNzc1NjYwMTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      duration: "02/2022 - 07/2022",
+      team: "TechViz Engineering Team",
+      tags: ["VR", "C++", "Testing", "R&D"],
+    },
+    {
+      title: "HMI Requirements & Design Guidelines",
+      description:
+        "Defined comprehensive HMI requirements and design recommendations based on experimental results from autonomous vehicle studies. Developed design guidelines and usability improvements for complex systems, translating user insights into actionable system requirements.",
+      status: "completed",
+      image:
+        "https://images.unsplash.com/photo-1585624882829-f92c2d4cd89d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwZXhwZXJpZW5jZSUyMHJlc2VhcmNoJTIwdGVzdGluZ3xlbnwxfHx8fDE3NzU1OTE2MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      duration: "2022 - 2025",
+      team: "PhD Research",
+      tags: ["HMI", "Requirements Engineering", "Design Guidelines"],
+    },
+  ];
+
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case "active":
+        return "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200";
+      case "completed":
+        return "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200";
+      case "upcoming":
+        return "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200";
+      default:
+        return "bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200";
+    }
+  };
+
+  const activeProjects = projects.filter((p) => p.status === "active");
+  const completedProjects = projects.filter((p) => p.status === "completed");
+
+  return (
+    <div>
+      {/* Header */}
+      <section className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-800 dark:to-indigo-800 py-16 transition-colors">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-bold text-white mb-4">{t("projects.title")}</h1>
+          <p className="text-blue-100 text-lg max-w-3xl">
+            {t("projects.subtitle")}
+          </p>
+        </div>
+      </section>
+
+      {/* Active Projects */}
+      <section className="py-16 bg-white dark:bg-gray-900 transition-colors">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
+            {t("projects.active")}
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {activeProjects.map((project, index) => (
+              <div
+                key={index}
+                className="bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-all"
+              >
+                <ImageWithFallback
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <span
+                      className={`px-2 py-1 rounded text-xs font-medium ${getStatusColor(
+                        project.status
+                      )}`}
+                    >
+                      {t(`projects.status.${project.status}`)}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                    {project.description}
+                  </p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                      <Calendar size={16} className="mr-2" />
+                      {t("projects.duration")}: {project.duration}
+                    </div>
+                    <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                      <Users size={16} className="mr-2" />
+                      {t("projects.team")}: {project.team}
+                    </div>
+                    {project.funding && (
+                      <div className="text-sm text-gray-600 dark:text-gray-400">
+                        <span className="font-medium">{t("projects.funding")}:</span>{" "}
+                        {project.funding}
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.map((tag, idx) => (
+                      <span
+                        key={idx}
+                        className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  {project.links && (
+                    <div className="flex flex-wrap gap-3">
+                      {project.links.website && (
+                        <a
+                          href={project.links.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center gap-1 text-sm"
+                        >
+                          <ExternalLink size={14} />
+                          Website
+                        </a>
+                      )}
+                      {project.links.github && (
+                        <a
+                          href={project.links.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center gap-1 text-sm"
+                        >
+                          <Github size={14} />
+                          GitHub
+                        </a>
+                      )}
+                      {project.links.paper && (
+                        <a
+                          href={project.links.paper}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center gap-1 text-sm"
+                        >
+                          <ExternalLink size={14} />
+                          Paper
+                        </a>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Completed Projects */}
+      <section className="py-16 bg-gray-50 dark:bg-gray-800 transition-colors">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
+            {t("projects.completed")}
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {completedProjects.map((project, index) => (
+              <div
+                key={index}
+                className="bg-white dark:bg-gray-700 rounded-lg shadow-md border border-gray-200 dark:border-gray-600 overflow-hidden hover:shadow-lg transition-all"
+              >
+                <ImageWithFallback
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <span
+                      className={`px-2 py-1 rounded text-xs font-medium ${getStatusColor(
+                        project.status
+                      )}`}
+                    >
+                      {t(`projects.status.${project.status}`)}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                    {project.description}
+                  </p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                      <Calendar size={16} className="mr-2" />
+                      {t("projects.duration")}: {project.duration}
+                    </div>
+                    <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                      <Users size={16} className="mr-2" />
+                      {t("projects.team")}: {project.team}
+                    </div>
+                    {project.funding && (
+                      <div className="text-sm text-gray-600 dark:text-gray-400">
+                        <span className="font-medium">{t("projects.funding")}:</span>{" "}
+                        {project.funding}
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.map((tag, idx) => (
+                      <span
+                        key={idx}
+                        className="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-gray-700 dark:text-gray-300 text-xs rounded"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  {project.links && (
+                    <div className="flex flex-wrap gap-3">
+                      {project.links.website && (
+                        <a
+                          href={project.links.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center gap-1 text-sm"
+                        >
+                          <ExternalLink size={14} />
+                          Website
+                        </a>
+                      )}
+                      {project.links.github && (
+                        <a
+                          href={project.links.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center gap-1 text-sm"
+                        >
+                          <Github size={14} />
+                          GitHub
+                        </a>
+                      )}
+                      {project.links.paper && (
+                        <a
+                          href={project.links.paper}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center gap-1 text-sm"
+                        >
+                          <ExternalLink size={14} />
+                          Paper
+                        </a>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Collaboration CTA */}
+      <section className="py-12 bg-white dark:bg-gray-900 transition-colors">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            {t("projects.collaboration")}
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">
+            {t("projects.collaborationDesc")}
+          </p>
+          <a
+            href="/contact"
+            className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            {t("cta.contactMe")}
+          </a>
+        </div>
+      </section>
+    </div>
+  );
+}
