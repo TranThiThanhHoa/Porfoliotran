@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { BookOpen, FlaskConical, Mail, Award } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
+import profileImage from "figma:asset/bc171d089db53ef68ae6724531f5b014ffa1ca0d.png";
 
 export function Home() {
   const { t } = useLanguage();
@@ -39,8 +40,8 @@ export function Home() {
             </div>
             <div className="relative">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1774638794582-a24f0604342d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjByZXNlYXJjaGVyJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NzU2NjAxNDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Research workspace"
+                src={profileImage}
+                alt="Tran Thi Thanh Hoa"
                 className="rounded-lg shadow-2xl w-full h-[400px] object-cover"
               />
             </div>
