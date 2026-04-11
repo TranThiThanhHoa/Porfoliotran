@@ -12,7 +12,6 @@ export function Navigation() {
 
   const navItems = [
     { path: "/", label: t("home") },
-    { path: "/research", label: t("research") },
     { path: "/publications", label: t("publications") },
     { path: "/projects", label: t("projects") },
     { path: "/contact", label: t("contact") },

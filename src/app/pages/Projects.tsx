@@ -11,7 +11,7 @@ interface Project {
   status: "active" | "completed" | "upcoming";
   image: string;
   duration: string;
-  team: string;
+  team?: string;
   funding?: string;
   tags: string[];
   links?: {
@@ -32,26 +32,9 @@ export function Projects() {
       status: "completed",
       image: userSetupImage,
       duration: "09/2022 - 10/2025",
-      team: "IRL Crossing CNRS, IMT Atlantique & Adelaide University",
-      funding: "PhD Research Project",
+      team: "Bruce H. Thomas, Guillaume Moreau, James Walsh and Etienne Peillard",
+      funding: "Australian Research Centre for Interactive and Virtual Environments, IRL Crossing and IMT Atlantique",
       tags: ["AR/VR", "Autonomous Vehicles", "User Studies", "HMI"],
-      links: {
-        paper: "https://orcid.org",
-      },
-    },
-    {
-      title: "VR Autonomous Vehicle Simulator",
-      description:
-        "Designed and developed a comprehensive VR simulator for prototyping and testing novel AR interface visualizations in autonomous vehicle contexts. Built using Unity and C# with integration of Meta Quest Pro and advanced VR hardware for immersive user testing.",
-      status: "completed",
-      image:
-        "https://images.unsplash.com/photo-1758273239313-6c703d089dd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aXJ0dWFsJTIwcmVhbGl0eSUyMGhlYWRzZXQlMjB1c2VyfGVufDF8fHx8MTc3NTY2MDE0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      duration: "2022 - 2025",
-      team: "PhD Research Project",
-      tags: ["VR", "Unity", "C#", "Simulation", "Prototyping"],
-      links: {
-        github: "https://github.com",
-      },
     },
     {
       title: "Immersive VR Modeling System",
@@ -60,11 +43,8 @@ export function Projects() {
       status: "completed",
       image: vrModelingImage,
       duration: "02/2021 - 07/2021",
-      team: "CNRS Grenoble",
+      team: "Romain Pinqie, Gilles Foucault",
       tags: ["VR", "3D Modeling", "Unity", "HTC Vive"],
-      links: {
-        paper: "https://doi.org",
-      },
     },
     {
       title: "AVATAR Project - Digital Twin VR Simulation (Erasmus+)",
@@ -73,12 +53,8 @@ export function Projects() {
       status: "completed",
       image: setUpImage,
       duration: "02/2021 - 06/2021",
-      team: "5 students from 4 European universities",
       funding: "Erasmus+ Program",
       tags: ["VR", "Digital Twin", "Team Leadership", "Open Source"],
-      links: {
-        github: "https://github.com",
-      },
     },
   ];
 
@@ -121,10 +97,12 @@ export function Projects() {
                       <Calendar size={16} className="mr-2" />
                       {t("projects.duration")}: {project.duration}
                     </div>
-                    <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                      <Users size={16} className="mr-2" />
-                      {t("projects.team")}: {project.team}
-                    </div>
+                    {project.team && (
+                      <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                        <Users size={16} className="mr-2" />
+                        {t("projects.team")}: {project.team}
+                      </div>
+                    )}
                     {project.funding && (
                       <div className="text-sm text-gray-600 dark:text-gray-400">
                         <span className="font-medium">{t("projects.funding")}:</span>{" "}

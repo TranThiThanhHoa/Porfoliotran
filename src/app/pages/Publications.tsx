@@ -186,41 +186,6 @@ export function Publications() {
         </div>
       </section>
 
-      {/* Links Section */}
-      <section className="py-12 bg-white dark:bg-gray-900 transition-colors">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            {t("publications.findMore")}
-          </h2>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="https://orcid.org/0000-0003-1102-3585"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
-            >
-              ORCID
-            </a>
-            <a
-              href="https://scholar.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              Google Scholar
-            </a>
-            <a
-              href="https://dblp.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-200 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
-            >
-              DBLP
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Certifications */}
       <section className="py-16 bg-gray-50 dark:bg-gray-800 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
