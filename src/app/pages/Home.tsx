@@ -106,6 +106,14 @@ export function Home() {
                 <GraduationCap className="text-blue-600 dark:text-blue-400" size={24} />
               </div>
               <div className="flex-1">
+                <div className="flex flex-wrap gap-2 mb-3">
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm font-medium rounded-full">
+                    IMT Atlantique
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm font-medium rounded-full">
+                    Adelaide University
+                  </span>
+                </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                   {t("education.phd")}
                 </h3>
@@ -124,6 +132,11 @@ export function Home() {
                 <GraduationCap className="text-blue-600 dark:text-blue-400" size={24} />
               </div>
               <div className="flex-1">
+                <div className="flex flex-wrap gap-2 mb-3">
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm font-medium rounded-full">
+                    Grenoble INP
+                  </span>
+                </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                   {t("education.engineer1")}
                 </h3>
@@ -142,6 +155,11 @@ export function Home() {
                 <GraduationCap className="text-blue-600 dark:text-blue-400" size={24} />
               </div>
               <div className="flex-1">
+                <div className="flex flex-wrap gap-2 mb-3">
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm font-medium rounded-full">
+                    Danang University of Technology
+                  </span>
+                </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                   {t("education.engineer2")}
                 </h3>

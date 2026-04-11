@@ -64,6 +64,7 @@ export function Publications() {
       year: 2025,
       type: "workshop",
       doi: "10.1109/ismar-adjunct68609.2025.00116",
+      award: "Best Paper Award",
     },
     {
       title:

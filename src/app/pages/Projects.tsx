@@ -2,7 +2,7 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { ExternalLink, Github, Calendar, Users } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import vrModelingImage from "../../imports/image.png";
-import setUpImage from "../../imports/SetUp.png";
+import avatarImage from "../../imports/image-1.png";
 import userSetupImage from "../../imports/userSetup.png";
 
 interface Project {
@@ -51,7 +51,7 @@ export function Projects() {
       description:
         "Led a team of 5 students from 4 European universities on a digital twin VR simulation project. Managed project timeline, tasks, code reviews, and cross-cultural collaboration. Contributing to an open-source 3D modeling program in VR with focus on team coordination and technical excellence.",
       status: "completed",
-      image: setUpImage,
+      image: avatarImage,
       duration: "02/2021 - 06/2021",
       funding: "Erasmus+ Program",
       tags: ["VR", "Digital Twin", "Team Leadership", "Open Source"],
