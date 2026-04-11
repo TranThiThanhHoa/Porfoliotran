@@ -16,99 +16,63 @@ export function Publications() {
   const { t } = useLanguage();
 
   const publications: Publication[] = [
+    // Journals
     {
       title:
-        "Trust and Passenger Experience in AR-Enhanced Autonomous Vehicles: An Eye-Tracking Study",
-      authors: "Tran, T.T.H., et al.",
+        "The influence of virtual character actions and emotional expressions on trust in autonomous vehicles",
+      authors: "Tran, T.T.H., Peillard, E., Walsh, J., Moreau, G., & Thomas, B.",
+      venue: "Virtual Reality",
+      year: 2026,
+      type: "journal",
+      doi: "10.1007/s10055-026-01334-1",
+    },
+    {
+      title:
+        "Direct Solid Modelling in Virtual Reality for Systems Architecting",
+      authors: "Tran, T.T.H., Foucault, G., & Pinquié, R.",
+      venue: "Procedia CIRP",
+      year: 2024,
+      type: "journal",
+      doi: "10.1016/j.procir.2024.08.230",
+    },
+    // Conferences
+    {
+      title:
+        "Trust and Safety in Autonomous Vehicles: Evaluating Contextual Visualizations for Highlighting, Prediction, and Anchoring",
+      authors: "Tran, T.T.H., Peillard, E., Walsh, J., Moreau, G., & Thomas, B.",
       venue:
-        "IEEE VR - IEEE Conference on Virtual Reality and 3D User Interfaces",
+        "ICAT 2025: 35th International Conference on Artificial Reality and Telexistence",
       year: 2025,
       type: "conference",
-      doi: "10.1109/VR.2025.xxxxx",
+      doi: "10.2312/egve.20251351",
     },
     {
       title:
-        "Workload Assessment in Autonomous Vehicle Interfaces Using NASA-TLX and Physiological Measures",
-      authors: "Tran, T.T.H., et al.",
+        "Impact of Adding, Removing and Modifying Driving and Non-Driving Related Information on Trust in Autonomous Vehicles",
+      authors: "Tran, T.T.H., Peillard, E., Walsh, J., Moreau, G., & Thomas, B.",
       venue:
-        "ISMAR - IEEE International Symposium on Mixed and Augmented Reality",
-      year: 2024,
+        "IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)",
+      year: 2025,
       type: "conference",
-      doi: "10.1109/ISMAR.2024.xxxxx",
+      doi: "10.1109/VRW66409.2025.00277",
     },
     {
       title:
-        "Designing AR Visualizations for Autonomous Vehicle Passenger Interfaces",
-      authors: "Tran, T.T.H., et al.",
-      venue:
-        "ICAT-EGVE - International Conference on Artificial Reality and Telexistence",
-      year: 2024,
-      type: "conference",
+        "Examining the impact of AR Weather Customization on Trust in Autonomous Vehicles",
+      authors: "Lamine, T., Tran, T.T.H., Hirchoua, B., Peillard, E., & Walsh, J.",
+      venue: "3rd Workshop on Seamless Reality (WSR 2025), ISMAR Workshop",
+      year: 2025,
+      type: "workshop",
+      doi: "10.1109/ismar-adjunct68609.2025.00116",
     },
     {
       title:
-        "VR-Based Prototyping Platform for Autonomous Vehicle HMI Design",
-      authors: "Tran, T.T.H., et al.",
-      venue:
-        "IEEE VR - IEEE Conference on Virtual Reality and 3D User Interfaces",
-      year: 2024,
-      type: "conference",
-      doi: "10.1109/VR.2024.xxxxx",
-    },
-    {
-      title:
-        "Cognitive Load Analysis in AR-Augmented Autonomous Driving Experiences",
-      authors: "Tran, T.T.H., et al.",
-      venue:
-        "ISMAR - IEEE International Symposium on Mixed and Augmented Reality",
-      year: 2023,
-      type: "conference",
-    },
-    {
-      title:
-        "Immersive VR System for Direct 3D Modeling Operations",
-      authors: "Tran, T.T.H., et al.",
-      venue:
-        "CAD - Computer-Aided Design and Applications Conference",
-      year: 2021,
-      type: "conference",
-      doi: "10.14733/cadconfP.2021.xxx",
-    },
-    {
-      title:
-        "User Experience Design Guidelines for Autonomous Vehicle AR Interfaces",
-      authors: "Tran, T.T.H., et al.",
-      venue:
-        "ICAT-EGVE - International Conference on Artificial Reality and Telexistence",
-      year: 2023,
-      type: "conference",
-    },
-    {
-      title:
-        "Eye-Tracking Based Evaluation of AR Information Display in Autonomous Vehicles",
-      authors: "Tran, T.T.H., et al.",
-      venue:
-        "IEEE VR - IEEE Conference on Virtual Reality and 3D User Interfaces",
-      year: 2023,
-      type: "conference",
-    },
-    {
-      title:
-        "Comparative Study of Interaction Techniques in VR Modeling Environments",
-      authors: "Tran, T.T.H., et al.",
-      venue: "CAD - Computer-Aided Design and Applications",
-      year: 2022,
-      type: "journal",
-      doi: "10.14733/cadaps.2022.xxx",
-    },
-    {
-      title:
-        "Design and Evaluation of Trust-Building Interfaces for Autonomous Vehicles",
-      authors: "Tran, T.T.H., et al.",
-      venue:
-        "ISMAR - IEEE International Symposium on Mixed and Augmented Reality",
+        "Benchmarking of 3D Modelling in Virtual Reality",
+      authors: "Tran, T.T.H., Foucault, G., & Pinquié, R.",
+      venue: "Computer-Aided Design and Applications (CAD2021)",
       year: 2022,
       type: "conference",
+      doi: "10.14733/cadaps.2022.1184-1190",
     },
   ];
 
@@ -151,49 +115,6 @@ export function Publications() {
           <p className="text-blue-100 text-lg max-w-3xl">
             {t("publications.subtitle")}
           </p>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-8 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 transition-colors">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
-                {publications.length}
-              </div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">
-                {t("publications.total")}
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
-                {publications.reduce(
-                  (sum, p) => sum + (p.citations || 0),
-                  0,
-                )}
-              </div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">
-                {t("stats.citations")}
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
-                {publications.filter((p) => p.award).length}
-              </div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">
-                {t("stats.awards")}
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
-                4
-              </div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">
-                {t("publications.hindex")}
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -273,6 +194,14 @@ export function Publications() {
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
             <a
+              href="https://orcid.org/0000-0003-1102-3585"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+            >
+              ORCID
+            </a>
+            <a
               href="https://scholar.google.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -288,14 +217,122 @@ export function Publications() {
             >
               DBLP
             </a>
-            <a
-              href="https://orcid.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-200 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
-            >
-              ORCID
-            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications */}
+      <section className="py-16 bg-gray-50 dark:bg-gray-800 transition-colors">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+            Professional Certifications
+          </h2>
+          <div className="max-w-3xl mx-auto space-y-4">
+            <div className="p-6 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-lg transition-colors hover:shadow-md">
+              <div className="flex items-start gap-3">
+                <Award className="text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" size={24} />
+                <div>
+                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                    ERASMUS+ Certificate for Advanced Virtual and Augmented Reality Toolkit for Learning
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    European Commission Program
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="p-6 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-lg transition-colors hover:shadow-md">
+              <div className="flex items-start gap-3">
+                <Award className="text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" size={24} />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                    3D Interaction Design in Virtual Reality
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">
+                    University of London, Coursera
+                  </p>
+                  <a
+                    href="https://www.coursera.org/account/accomplishments/certificate/58YVZLJ89MV2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center gap-1 text-sm"
+                  >
+                    <ExternalLink size={14} />
+                    View Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-lg transition-colors hover:shadow-md">
+              <div className="flex items-start gap-3">
+                <Award className="text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" size={24} />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                    3D Models for Virtual Reality
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">
+                    University of London, Coursera
+                  </p>
+                  <a
+                    href="https://www.coursera.org/account/accomplishments/certificate/DH6J68Q6237G"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center gap-1 text-sm"
+                  >
+                    <ExternalLink size={14} />
+                    View Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-lg transition-colors hover:shadow-md">
+              <div className="flex items-start gap-3">
+                <Award className="text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" size={24} />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                    Building Interactive 3D Characters and Social VR
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">
+                    University of London, Coursera
+                  </p>
+                  <a
+                    href="https://www.coursera.org/account/accomplishments/certificate/LMPVNEAREDMS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center gap-1 text-sm"
+                  >
+                    <ExternalLink size={14} />
+                    View Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-lg transition-colors hover:shadow-md">
+              <div className="flex items-start gap-3">
+                <Award className="text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" size={24} />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                    Machine Learning
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">
+                    Stanford University, Coursera
+                  </p>
+                  <a
+                    href="https://www.coursera.org/account/accomplishments/verify/R80DGQFLTAQK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center gap-1 text-sm"
+                  >
+                    <ExternalLink size={14} />
+                    View Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -1,5 +1,8 @@
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { useLanguage } from "../contexts/LanguageContext";
+import vrModelingImage from "../../imports/image.png";
+import setUpImage from "../../imports/SetUp.png";
+import userSetupImage from "../../imports/userSetup.png";
 
 export function Research() {
   const { t } = useLanguage();
@@ -8,12 +11,12 @@ export function Research() {
     {
       title: "Immersive VR 3D Modeling Systems",
       description:
-        "Developing innovative VR systems for direct 3D modeling operations including resize, translate, rotate, and Boolean operations. Creating intuitive interaction techniques for CAD modeling in immersive virtual environments.",
-      image:
-        "https://images.unsplash.com/photo-1603982490701-fa98e79b23ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxodW1hbiUyMGNvbXB1dGVyJTIwaW50ZXJhY3Rpb24lMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzc1NjYwMTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "Developing VR systems for direct 3D modeling operations including resize, translate, rotate, and Boolean operations. Creating intuitive interaction techniques for CAD modeling in immersive virtual environments. Designing and developing immersive VR simulators for prototyping and testing novel AR interface visualizations.",
+      image: vrModelingImage,
       keyFocus: [
         "Direct 3D modeling operations in VR",
         "Unity and C# development for CAD systems",
+        "Meta Quest Pro, HTC Vive, Valve integration",
         "Integration with FreeCAD and Creo",
         "Presented at CAD 2021 conference",
       ],
@@ -22,34 +25,20 @@ export function Research() {
       title: "Autonomous Vehicle HMI & Passenger Experience",
       description:
         "Developing AR/VR interfaces for autonomous vehicles with focus on trust, passenger experience, and usability. Conducting comprehensive user studies to assess workload, cognitive load, and user acceptance.",
-      image:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGludGVyZmFjZXxlbnwxfHx8fDE3NzU2NjAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: userSetupImage,
       keyFocus: [
         "7 user studies on trust and passenger experience",
+        "VR autonomous vehicle simulator development",
         "AR interface visualizations for autonomous vehicles",
         "NASA-TLX workload assessment",
         "Eye-tracking and physiological data analysis (GSR)",
       ],
     },
     {
-      title: "VR Simulation & Prototyping",
-      description:
-        "Designing and developing immersive VR simulators for prototyping and testing novel AR interface visualizations. Creating VR environments for autonomous vehicle research and 3D modeling operations.",
-      image:
-        "https://images.unsplash.com/photo-1758273239313-6c703d089dd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aXJ0dWFsJTIwcmVhbGl0eSUyMGhlYWRzZXQlMjB1c2VyfGVufDF8fHx8MTc3NTY2MDE0Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      keyFocus: [
-        "VR autonomous vehicle simulator development",
-        "Unity and C# development",
-        "Meta Quest Pro, HTC Vive, Valve integration",
-        "Immersive 3D modeling systems",
-      ],
-    },
-    {
       title: "Usability Evaluation & Activity Analysis",
       description:
         "Conducting operator activity analysis, usability testing, and workload assessment using qualitative and quantitative methods. Translating user insights into actionable HMI requirements and design recommendations.",
-      image:
-        "https://images.unsplash.com/photo-1545579833-0e15a2cdb26b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdWdtZW50ZWQlMjByZWFsaXR5JTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NzU2NjAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: setUpImage,
       keyFocus: [
         "Operator interviews and observations",
         "Behavioral and cognitive analysis",
@@ -114,44 +103,6 @@ export function Research() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Methodology */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800 transition-colors">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            {t("research.methodology")}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors">
-              <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">01</div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                {t("research.userCentered")}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                {t("research.userCenteredDesc")}
-              </p>
-            </div>
-            <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors">
-              <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">02</div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                {t("research.iterative")}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                {t("research.iterativeDesc")}
-              </p>
-            </div>
-            <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors">
-              <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">03</div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                {t("research.empirical")}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                {t("research.empiricalDesc")}
-              </p>
-            </div>
           </div>
         </div>
       </section>

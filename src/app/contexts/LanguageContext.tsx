@@ -20,7 +20,7 @@ const translations = {
     // Home page
     "hero.title": "Tran Thi Thanh Hoa",
     "hero.subtitle": "Research and Development Engineer – HMI and VR",
-    "hero.description": "PhD in Human Factors and Human-Machine Interaction with strong experience in operator activity analysis, usability evaluation, and interface design for complex systems. Specialized in AR/VR prototyping, autonomous vehicle interfaces, and user experience research.",
+    "hero.description": "PhD in Human Factors and Human-Machine Interaction with experience in operator activity analysis, usability evaluation, and interface design for complex systems. Specialized in AR/VR prototyping, 3D modeling, and user experience research.",
     "hero.viewResearch": "View Research",
     "hero.getInTouch": "Get in Touch",
     
@@ -32,22 +32,48 @@ const translations = {
     
     // Research Areas
     "researchAreas.title": "Research Focus Areas",
-    "researchAreas.accessible": "Autonomous Vehicle HMI",
+    "researchAreas.accessible": "Autonomous Vehicle HMI & Passenger Experience",
     "researchAreas.accessibleDesc": "Designing AR/VR interfaces for autonomous vehicles focusing on passenger experience, trust, and usability.",
     "researchAreas.multimodal": "User Experience Research",
     "researchAreas.multimodalDesc": "Conducting user studies using NASA-TLX, eye-tracking, and physiological data analysis to assess workload and cognitive load.",
-    "researchAreas.arvr": "AR/VR Prototyping",
-    "researchAreas.arvrDesc": "Developing immersive VR simulators and AR visualization systems using Unity and advanced prototyping tools.",
+    "researchAreas.arvr": "AR/VR Prototyping and 3D Modeling",
+    "researchAreas.arvrDesc": "Developing VR systems for 3D modeling and AR visualization systems using Unity and advanced prototyping tools",
     
     // Recent Highlights
-    "highlights.title": "Recent Highlights",
+    "highlights.title": "Highlights",
     "highlights.bestPaper": "PhD Completion – France-Australia Cotutelle",
     "highlights.bestPaperDesc": "Completed PhD in Computer Science (HMI & UX) at IMT Atlantique and Adelaide University (2022-2025).",
-    "highlights.grant": "Published at IEEE VR, ISMAR, ICAT",
-    "highlights.grantDesc": "Presented research on AR/UX and autonomous vehicle interfaces at leading international conferences.",
-    "highlights.keynote": "7 User Studies Completed",
-    "highlights.keynoteDesc": "Conducted comprehensive user studies on trust, passenger experience, and usability in autonomous vehicles using AR/VR.",
+    "highlights.grant": "Eramus+ Avatar Project",
+    "highlights.grantDesc": "Awarded a certificate in Advanced Virtual and Augmented Reality Toolkit for Learning by the four partners of the Avatar project: Grenoble INP, Polimi, CNR, and UB.",
+    "highlights.keynote": "Eiffel Excellence Scholarship ",
+    "highlights.keynoteDesc": "Awarded Eiffel Excellence Scholarship from the French Ministry of Europe and Foreign Affairs.",
     
+    // Education
+    "education.title": "Education",
+    "education.phd": "PhD in Computer Science (Human-Machine Interaction & UX)",
+    "education.phdSchool": "IMT Atlantique, France & Adelaide University, Australia",
+    "education.phdYears": "2022 – 2025",
+    "education.phdNote": "France–Australia Cotutelle Program",
+    "education.engineer1": "Engineer's Degree – Product Engineering",
+    "education.engineer1School": "Grenoble INP, France",
+    "education.engineer1Years": "2018 – 2021",
+    "education.engineer1Note": "Awarded Eiffel Excellence Scholarship from the French Ministry of Europe and Foreign Affairs",
+    "education.engineer2": "Engineer's Degree – Automated Production Engineering",
+    "education.engineer2School": "Danang University of Technology, Vietnam",
+    "education.engineer2Years": "2015 – 2018",
+
+    // Experience
+    "experience.title": "Professional Experience",
+    "experience.researcher": "Researcher – Human-Machine Interaction",
+    "experience.researcherOrg": "Australian Research Centre for Interactive and Virtual Environments and Crossing IRL CNRS",
+    "experience.researcherYears": "09/2022 – 10/2025",
+    "experience.rdEngineer": "R&D Engineer – C++ / Virtual Reality",
+    "experience.rdEngineerOrg": "TechViz, Paris, France",
+    "experience.rdEngineerYears": "02/2022 – 08/2022",
+    "experience.researchEngineer": "Research Engineer (3D Modeling in VR) – Graduation Project",
+    "experience.researchEngineerOrg": "CNRS, Grenoble, France",
+    "experience.researchEngineerYears": "02/2021 – 08/2021",
+
     // CTA
     "cta.title": "Interested in Collaboration?",
     "cta.description": "I'm always open to discussing research opportunities, partnerships, and innovative projects in HMI, AR/VR, and autonomous systems.",
@@ -68,7 +94,7 @@ const translations = {
     
     // Publications page
     "publications.title": "Publications",
-    "publications.subtitle": "Research publications on AR/VR interfaces, autonomous vehicle HMI, and user experience presented at international conferences.",
+    "publications.subtitle": "Research publications on AR/VR interfaces, autonomous vehicle HMI, 3D modeling, and user experience presented at international conferences.",
     "publications.total": "Conference Papers",
     "publications.hindex": "Research Areas",
     "publications.findMore": "Find More Publications",
@@ -129,7 +155,7 @@ const translations = {
     "footer.description": "Research and Development Engineer specializing in HMI, AR/VR, and autonomous vehicle interfaces.",
     "footer.quickLinks": "Quick Links",
     "footer.connect": "Connect",
-    "footer.copyright": "© 2026 Dr. Tran Thi Thanh Hoa. All rights reserved.",
+    "footer.copyright": "Tran Thi Thanh Hoa. All rights reserved.",
   },
   fr: {
     // Navigation
@@ -142,7 +168,7 @@ const translations = {
     // Home page
     "hero.title": "Tran Thi Thanh Hoa",
     "hero.subtitle": "Ingénieure R&D – IHM et RV",
-    "hero.description": "Docteure en Facteurs Humains et Interaction Humain-Machine avec une solide expérience en analyse d'activité, évaluation d'utilisabilité et conception d'interface pour systèmes complexes. Spécialisée en prototypage AR/VR, interfaces de véhicules autonomes et recherche en expérience utilisateur.",
+    "hero.description": "Docteure en Facteurs Humains et Interaction Humain-Machine avec une solide expérience en analyse d'activité, évaluation d'utilisabilité et conception d'interface pour systèmes complexes. Spécialisée en prototypage AR/VR, 3D modélisation et recherche en expérience utilisateur.",
     "hero.viewResearch": "Voir la Recherche",
     "hero.getInTouch": "Contactez-moi",
     
@@ -154,22 +180,48 @@ const translations = {
     
     // Research Areas
     "researchAreas.title": "Domaines de Recherche",
-    "researchAreas.accessible": "IHM pour Véhicules Autonomes",
+    "researchAreas.accessible": "IHM pour Véhicules Autonomes et Expérience Passager",
     "researchAreas.accessibleDesc": "Conception d'interfaces AR/VR pour véhicules autonomes axées sur l'expérience passager, la confiance et l'utilisabilité.",
     "researchAreas.multimodal": "Recherche en Expérience Utilisateur",
     "researchAreas.multimodalDesc": "Réalisation d'études utilisateurs avec NASA-TLX, eye-tracking et analyse de données physiologiques pour évaluer la charge de travail et cognitive.",
-    "researchAreas.arvr": "Prototypage AR/VR",
-    "researchAreas.arvrDesc": "Développement de simulateurs VR immersifs et systèmes de visualisation AR avec Unity et outils de prototypage avancés.",
+    "researchAreas.arvr": "Prototypage AR/VR et 3d Modélisation",
+    "researchAreas.arvrDesc": "Développement de systèmes VR pour modélisation 3D et systèmes de visualisation AR avec Unity et outils de prototypage avancés.",
     
     // Recent Highlights
-    "highlights.title": "Faits Saillants Récents",
+    "highlights.title": "Faits Saillants",
     "highlights.bestPaper": "Doctorat Complété – Cotutelle France-Australie",
     "highlights.bestPaperDesc": "Doctorat en Informatique (IHM & UX) à IMT Atlantique et Université d'Adélaïde (2022-2025).",
-    "highlights.grant": "Publications à IEEE VR, ISMAR, ICAT",
-    "highlights.grantDesc": "Présentation de recherches sur AR/UX et interfaces de véhicules autonomes lors de conférences internationales de premier plan.",
-    "highlights.keynote": "7 Études Utilisateurs Réalisées",
-    "highlights.keynoteDesc": "Conduite d'études complètes sur la confiance, l'expérience passager et l'utilisabilité dans les véhicules autonomes avec AR/VR.",
+    "highlights.grant": "Projet Erasmus+ Avatar",
+    "highlights.grantDesc": "Certificat obtenu en « Advanced Virtual and Augmented Reality Toolkit for Learning », délivré par les quatre partenaires du projet Avatar : Grenoble INP, Polimi, CNR et UB.",
+    "highlights.keynote": "Bourse d'excellence Eiffel",
+    "highlights.keynoteDesc": "Lauréat de la bourse d’excellence Eiffel du ministère de l’Europe et des Affaires étrangères.",
     
+    // Education
+    "education.title": "Formation",
+    "education.phd": "Doctorat en Informatique (Interaction Humain-Machine & UX)",
+    "education.phdSchool": "IMT Atlantique, France & Université d'Adélaïde, Australie",
+    "education.phdYears": "2022 – 2025",
+    "education.phdNote": "Programme de Cotutelle France–Australie",
+    "education.engineer1": "Diplôme d'Ingénieur – Génie des Produits",
+    "education.engineer1School": "Grenoble INP, France",
+    "education.engineer1Years": "2018 – 2021",
+    "education.engineer1Note": "Lauréate de la Bourse d'Excellence Eiffel du Ministère de l'Europe et des Affaires Étrangères",
+    "education.engineer2": "Diplôme d'Ingénieur – Génie de la Production Automatisée",
+    "education.engineer2School": "Université de Technologie de Danang, Vietnam",
+    "education.engineer2Years": "2015 – 2018",
+
+    // Experience
+    "experience.title": "Expérience Professionnelle",
+    "experience.researcher": "Chercheuse – Interaction Humain-Machine",
+    "experience.researcherOrg": "Australian Research Centre for Interactive and Virtual Environments et Crossing IRL CNRS",
+    "experience.researcherYears": "09/2022 – 10/2025",
+    "experience.rdEngineer": "Ingénieure R&D – C++ / Réalité Virtuelle",
+    "experience.rdEngineerOrg": "TechViz, Paris, France",
+    "experience.rdEngineerYears": "02/2022 – 08/2022",
+    "experience.researchEngineer": "Ingénieure de Recherche (Modélisation 3D en RV) – Projet de Fin d'Études",
+    "experience.researchEngineerOrg": "CNRS, Grenoble, France",
+    "experience.researchEngineerYears": "02/2021 – 08/2021",
+
     // CTA
     "cta.title": "Intéressé par une Collaboration?",
     "cta.description": "Je suis toujours ouverte à discuter d'opportunités de recherche, de partenariats et de projets innovants en IHM, AR/VR et systèmes autonomes.",
@@ -190,7 +242,7 @@ const translations = {
     
     // Publications page
     "publications.title": "Publications",
-    "publications.subtitle": "Publications de recherche sur les interfaces AR/VR, IHM de véhicules autonomes et expérience utilisateur présentées lors de conférences internationales.",
+    "publications.subtitle": "Publications de recherche sur les interfaces AR/VR, IHM de véhicules autonomes, 3D modélisation et expérience utilisateur présentées lors de conférences internationales.",
     "publications.total": "Articles de Conférence",
     "publications.hindex": "Domaines de Recherche",
     "publications.findMore": "Trouver Plus de Publications",
@@ -251,7 +303,7 @@ const translations = {
     "footer.description": "Ingénieure R&D spécialisée en IHM, AR/VR et interfaces de véhicules autonomes.",
     "footer.quickLinks": "Liens Rapides",
     "footer.connect": "Connecter",
-    "footer.copyright": "© 2026 Dr. Tran Thi Thanh Hoa. Tous droits réservés.",
+    "footer.copyright": "Tran Thi Thanh Hoa. Tous droits réservés.",
   },
 };
 

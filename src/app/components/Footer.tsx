@@ -9,32 +9,48 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Tran Thi Thanh Hoa</h3>
+            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
+              Tran Thi Thanh Hoa
+            </h3>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
               {t("footer.description")}
             </p>
           </div>
 
           <div>
-            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">{t("footer.quickLinks")}</h3>
+            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
+              {t("footer.quickLinks")}
+            </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/research" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                <a
+                  href="/research"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
+                >
                   {t("research")}
                 </a>
               </li>
               <li>
-                <a href="/publications" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                <a
+                  href="/publications"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
+                >
                   {t("publications")}
                 </a>
               </li>
               <li>
-                <a href="/projects" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                <a
+                  href="/projects"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
+                >
                   {t("projects")}
                 </a>
               </li>
               <li>
-                <a href="/contact" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                <a
+                  href="/contact"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
+                >
                   {t("contact")}
                 </a>
               </li>
@@ -42,18 +58,12 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">{t("footer.connect")}</h3>
+            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
+              {t("footer.connect")}
+            </h3>
             <div className="flex space-x-4">
               <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
-              >
-                <Github size={20} />
-              </a>
-              <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/thanh-hoa-tran/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
@@ -61,15 +71,7 @@ export function Footer() {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
-              >
-                <Twitter size={20} />
-              </a>
-              <a
-                href="mailto:alex.morgan@university.edu"
+                href="mailto:tthithanhhoa@gmail.com"
                 className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
               >
                 <Mail size={20} />
