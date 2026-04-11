@@ -74,18 +74,19 @@ export function Projects() {
       {/* Projects */}
       <section className="py-16 bg-white dark:bg-gray-900 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8">
             {projects.map((project, index) => (
               <div
                 key={index}
                 className="bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-all"
               >
-                <ImageWithFallback
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <ImageWithFallback
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-64 md:h-full object-cover"
+                  />
+                  <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                     {project.title}
                   </h3>
@@ -157,6 +158,7 @@ export function Projects() {
                       )}
                     </div>
                   )}
+                </div>
                 </div>
               </div>
             ))}
